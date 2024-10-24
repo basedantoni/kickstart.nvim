@@ -15,6 +15,15 @@ return {
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_gitignored = true,
+        hide_by_name = {
+          '.gitignore',
+          'package-lock.json',
+        },
+        never_show = { '.git' },
+      },
       window = {
         mappings = {
           ['\\'] = 'close_window',
